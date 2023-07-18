@@ -1,0 +1,81 @@
+
+.positionContainerImg {
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    max-height: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding: 2px;
+    background: linear-gradient(-45deg, #ffffff, #ffffff 50%, #000000 50%, #000000);
+      background-size: 400% 400%;
+      animation: gradient 2.5s ease 1;
+  }
+
+  .sectionHeader {
+    text-decoration: none;
+    justify-self: start;
+    padding: 0.8rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+  }
+
+  .pageHeader {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0.8rem;
+    padding-top: 1rem;
+    line-height: 1;
+}
+
+  .contentPageCenteringDiv {
+    align-items: baseline;
+    padding: 1rem 1rem 0.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 0.5rem;
+  }
+
+
+@media (min-width:460px) {
+    .contentPageCenteringDiv {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    
+}
+
+@media (min-width:700px) {
+    .contentPageCenteringDiv {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0px;
+      }
+    
+    h2 {
+        font-size: 2.5rem;
+        padding: 0px;  
+        line-height: 1;
+        display: flex;
+        place-items: center;
+        justify-self: start;
+    }
+    
+    .styledLink {
+        padding: 1.3rem 1rem 0.7rem 1rem;    
+    }
+
+  
+}

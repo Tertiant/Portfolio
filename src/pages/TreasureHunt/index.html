@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Jim // Treasure Hunt</title>    
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="TreasureHunt.module.css">
+
+  </head>
+  <body>
+      <header>
+        <div class="contentPageCenteringDiv">
+          <div class="pageHeader sectionHeader">
+            <h1>Treasure Hunt</h1>
+          </div>
+          <a class="emailLink" href="mailto:jshodgson@gmail.com">jshodgson@gmail.com</a>
+        </div>
+        <div id="headerPseudoBorder"></div>
+      </header>
+    <div id="mainContent">
+      <div class="contentCard">
+        <div class="sectionHeader">
+          <h2>Context</h2>
+        </div>
+        <p id="TH_Context">
+          With numerous retailers offering a limited selection of cards at varying prices, Magic: the Gathering players often face challenges finding the cards they want at an acceptable price. The goal of Treasure Hunt is to provide a current and comprehensive overview of card prices and availability across Canadian magic stores. This would save players time, effort, and money, empowering them to enjoy the game without breaking the bank.
+        </p>
+          <div class="positionContainerImg">
+          <img class="contentImage" src="../../images/TreasureHuntCover.png" alt="The home screen of the Treasure Hunt web app">    
+        </div>
+      </div>
+
+      <div class="contentCard">
+        <div class="sectionHeader">
+          <h2>Surveys</h2>
+        </div>
+        <div>
+          <p>
+            I play Magic, and know firsthand the struggle of finding the cards I want at a reasonable price. However, my experience is not necessarily representative. To make sure that this website is useful to as broad an audience as possible, I surveyed a sample of Canadian Magic players. I found that:
+          </p>
+          <ol>
+              <li>Comparing cards across shops takes time and effort. People feel that they don't have enough information about fair prices for their desired cards.</li>
+              <li>People mostly buy Magic cards when available from their local game stores, but are willing to branch out to find better deals.</li>
+              <li>People spend an average of 1.5 hours and $20-$100 buying Magic cards each month.</li>
+          </ol>
+        </div>       
+        <div class="positionContainerImg">
+          <img class="contentImage" src="../../images/SurveyScreen.png" alt="A screenshot of a survey question asking if the respondent plays Magic: The Gathering">    
+        </div> 
+      </div>
+
+      <div class="contentCard">
+        <div class="sectionHeader">
+          <h2>Interviews</h2>
+        </div>
+        <div>
+          <p>To gain insight into the finer points of how people buy Magic cards, I conducted in-person and phone interviews with five Canadian Magic players. The results showed that:
+          </p>
+          <ol>
+              <li>Players generally don't browse, they decide on the cards they want and then check to see if they are affordable or available at their preferred store. If no, they are willing to either wait until it becomes available or they cast a wider net and look at other stores.
+              </li>
+              <li>Respondents generally felt that that it takes too long to find the cards they want, that information about stock levels across stores is not readily available, and that it can be difficult to know if the price of a card is fair.
+              </li>
+              <li>The general sentiment was that a price comparison website like Treasure Hunt would be useful for saving time and/or money.
+              </li>
+              <li>The top three features players want to see in Treasure Hunt are accurate cost/inventory data, an easy way to find specific cards using search terms/filters, and the ability to control which stores are included in the results.               
+              </li>
+              <li>The top three dealbreakers for players are if the interface is slow or frustrating, if the data is inaccurate, or if there is an abundance of ads/scams.
+              </li>
+          </ol>
+        </div>
+        <div class="positionContainerImg">
+          <img class="contentImage" src="../../images/academyResearchers.png" alt="Artwork by Stephen Daniele depicting two professors in conversation">    
+        </div>
+      </div>
+
+      <div class="contentCard">
+        <div class="sectionHeader">
+          <h2>Personas</h2>
+        </div>
+        <div>
+          <p>
+            Based on the interviews and surveys, I identified two core personas that would be interested in this website:
+        </p>
+        <ul>
+            <li>
+                <p><strong>The Creative:</strong> this archetype describes people who enjoy the deckbuilding side of the game, who enjoy building several different decks. They like discovering cards, they buy many cheap cards, and they need the ability to bookmark cards as they brainstorm decks.</p>
+                <blockquote>
+                    "As someone with a busy schedule, I want to be able to find the cards I'm looking for quickly so that I can spend more time building the decks or playing with friends."
+                </blockquote>
+                <blockquote>
+                    "As someone with a set budget for magic cards, I want to be able to find the cheapest option for the cards I want so that I can play the decks I want without breaking the bank."
+                </blockquote>
+            </li>
+            <li>
+                <p><strong>The Collector:</strong> this archetype describes people who are always on the hunt for rare or expensive cards. Finding price differences between stores or getting notifications when an item is back in stock are critical for collecting cards the cards they want.</p>
+                <blockquote>
+                    "As someone who collects rare cards, I want to be able to check local stock quickly and receive notifications when cards on my list are in stock so that I can catch the ones that are hard to find before someone else does."
+                </blockquote>
+                <blockquote>
+                    "As someone whose time is valuable, being able to copy/paste in a list of cards and buy them all in one place would save me a lot of money."
+                </blockquote>
+            </li>
+        </ul>
+
+        </div>
+        <div class="positionContainerImg">
+          <img class="contentImage" src="../../images/ArchetypeOfImagination.png" alt="Artwork by Robbie Trevino depicting a humanoid made of stars flying into the night sky">    
+        </div>
+      </div>
+
+      <div class="contentCard">
+        <div class="sectionHeader">
+          <h2>User Flows</h2>
+        </div>
+        <div>
+          <p>
+            Continuing from the interviews, surveys, and personas there are five core flows that the website needs to support:
+        </p>
+        <ol>
+            <li>Users need to be able to search for cards</li>
+            <li>Users should be able to filter results based on card attributes like condition, foiling, and art</li>
+            <li>Users should be able to add cards to a watchlist</li>
+            <li>Users should be able to view a card's details</li>
+            <li>Users should be able to buy any number of cards directly through the website</li>
+        </ol>
+        </div>
+        <div class="positionContainerImg">
+          <img class="contentImage" src="../../images/OverflowingInsight.png" alt="Artwork by Lucas Graciano depicting a merman casting a spell">    
+        </div>
+      </div>
+
+      <div class="contentCard">
+        <div class="sectionHeader">
+          <h2>Iteration</h2>
+        </div>
+        <div>
+          <p>
+            The design went through four rounds of iteration, each one followed by user testing. The feedback from the user tests was invaluable, informing the direction the design should go. Notable changes include consistent use of styles between button types, expansion of cards to show their details, clear and concise buttons to add cards to your cart, and feedback on each interaction.
+          </p>
+        </div>
+        <div class="positionContainerImg">
+          <img class="contentImage" src="../../images/DeterminedIteration.png" alt="Artwork by Zoltan Boros depicting an old woman carving a bust, surrounded by previous versions of the same bust.">    
+        </div>
+      </div>
+
+      <div class="contentCard" id="finalFrames">
+        <div class="sectionHeader">
+          <h2>Final Version</h2>
+        </div>
+        <div id="TH_finalFramesContainer">
+          <div class="TH-ImageContainer">
+            <img class="TH-Image" src="../../images/TH_Homepage.png" alt="The home screen of the Treasure Hunt web app"> 
+            <h4>Homepage</h4>   
+          </div>
+          <div class="TH-ImageContainer">
+            <img class="TH-Image" src="../../images/TH_Results.png" alt="The search results screen of the Treasure Hunt web app"> 
+            <h4>Search Results</h4>   
+          </div>
+          <div class="TH-ImageContainer">
+            <img class="TH-Image" src="../../images/TH_ExpandedUp.png" alt="The expanded search results screen of the Treasure Hunt web app"> 
+            <h4>Expanded</h4>   
+          </div>
+          <div class="TH-ImageContainer">
+            <img class="TH-Image" src="../../images/TH_ExpandedScroll.png" alt="The details of a card as seen in the Treasure Hunt web app"> 
+            <h4>Card Details</h4>   
+          </div>
+          <div class="TH-ImageContainer">
+            <img class="TH-Image" src="../../images/TH_Watchlist.png" alt="The watchlist screen of the Treasure Hunt web app"> 
+            <h4>Watchlist</h4>   
+          </div>
+          <div class="phantomImage"></div>
+        </div>
+        <a class="styledLink" target="_blank" href="https://www.figma.com/proto/qzygZbsQHmbvzk9jc84raU/Lab5?type=design&node-id=4-2&t=lsBcly9rUV4iY3ub-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A2&hotspot-hints=0&hide-ui=1">
+          <h2>Figma  Prototype ></h2>
+        </a>
+      </div>
+      
+    </div>
+    <footer>
+
+    </footer>
+    <a class="floatingButton" href="../Projects/index.html">
+      <h2>&lt; Back</h2>
+    </a>
+
+    <a class="floatingButton up" href="#">
+      <h2><span>&lt;</span>Top</h2>
+    </a>
+  </body>
+</html>
