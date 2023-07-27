@@ -1,11 +1,6 @@
 @import url("fonts/Oswald/oswald.css");
-@import url("@fontsource/noto-serif-sc/400.css");
-@import url("@fontsource/noto-serif-sc/900.css");
-
-
-
-@import url("pages/TreasureHunt/TreasureHunt.module.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;900&display=swap');
+@import url("TreasureHunt/TreasureHunt.module.css");
 
 html {
     box-sizing: border-box;
@@ -16,15 +11,14 @@ html {
 }
 
 :root {
-  font-family: 'Noto Serif SC', sans-serif;
+  font-family: 'Noto Serif', serif;  
   line-height: 1.5;
   font-weight: 400;
   font-size: 13pt;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color-scheme: light;
+  color: #000000;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -160,14 +154,14 @@ footer {
   width: 300px;
   max-width: 100%;
   height: auto;
-  background-image: linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243));
+  /* background-image: linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243)); */
 }
 
 .TH-Image {
   width: 300px;
   max-width: 100%;
   height: auto;
-  background-image: linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243));
+  /* background-image: linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243)); */
   /* box-shadow: 0.5rem 0.5rem 0px rgba(0, 0, 0, 1); */
   border: 2px solid black;
 }
@@ -183,7 +177,7 @@ footer {
   width: 1068px;
   max-width: 100%;
   height: auto;
-  background-image: linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243));
+  /* background-image: linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243)); */
   /* box-shadow: 0.5rem 0.5rem 0px rgba(0, 0, 0, 1); */
   border: 2px solid black;
 }
@@ -266,14 +260,14 @@ footer {
 }
 
 #profileImageBackground {
-  border-radius: 160px;
+  border-radius: 150px;
   background: linear-gradient(90deg, #000000, #000000 50%, #ffffff 50%, #ffffff);
 	background-size: 200% 100%;
   animation: gradientDown 0.8s ease 1;
 }
 
 .profileImage {
-  border-radius: 160px;
+  border-radius: 150px;
 }
 
 .contentCard p {
@@ -286,7 +280,7 @@ h1 {
   font-family: oswaldregular, system-ui, Arial, sans-serif;
   font-size: 2rem;
   margin: 0px;
-  line-height: 1;
+  line-height: normal;
   display: flex;
   place-items: center;
   justify-self: start;
@@ -408,8 +402,8 @@ button:focus-visible {
 }
 
 .up {
-  bottom: 0.7rem;
-  right: 0;
+  bottom: 0.1rem;
+  right: 0.7rem;
   padding: 0.8rem 1rem 0.7rem 0.8rem;
   justify-self: end;
   margin: 0;
@@ -422,16 +416,21 @@ button:focus-visible {
   margin-right: 0.4rem;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #142535;
-    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
   }
   .emailLink:hover {
     color: #63658b;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .positionContainerImg {
+    background: linear-gradient(-45deg, #000000, #000000 50%, #ffffff 50%, #ffffff);
+  }
+  
+  #profileImageBackground {
+    background: linear-gradient(90deg, #000000, #000000 50%, #ffffff 50%, #ffffff);
   }
 }
 
@@ -509,17 +508,12 @@ button:focus-visible {
     "b c" 1fr / 300px 1fr;
   }
 
-  .back {
-    bottom: 1rem;    
-    padding: 1rem 1.5rem 1rem 1.1rem;     
-  }
-
-  .back h2 {
-    font-size: 1.5rem;
-  }
-
   .floatingButton h2 {
     font-size: 1.5rem;
+  }
+
+  .up {
+    bottom: 0.2rem;
   }
 }
 
